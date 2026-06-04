@@ -1,46 +1,47 @@
-# SALMA: Structure-Aware Alignment Framework for Referring Image and Video Segmentation
+# Hi there, I'm Peng Rui (彭锐) 👋
 
-<div align="center">
+🎓 **Joint-Training Master's Student** at **NERCITA** (National Engineering Research Center for Information Technology in Agriculture) & **Zhejiang A&F University**.
 
-[![Paper](https://img.shields.io/badge/Paper-Under_Review-red.svg)](链接)
-[![Model](https://img.shields.io/badge/Model-HuggingFace-yellow.svg)](链接)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+📧 **Email**: pengrui130@gmail.com | 🌐 **Google Scholar**: [Your Link Here] | 📄 **CV**: [Your CV Link Here]
 
-</div>
+---
 
-> **[TL;DR]** SALMA introduces a class-agnostic structural prior into the cross-modal alignment process via **Mask-Biased Attention (MBA)** and **Text-Mask Contrastive (TMC) Loss**, significantly mitigating attention drift and improving boundary quality in referring segmentation tasks.
+## 🔍 Research Interests
+My research focuses on the intersection of multimodal perception and efficient reasoning, specifically:
+- **Multimodal Large Language Models (MLLMs)**: Cross-modal alignment, multimodal perception, and fine-grained controllability[cite: 6].
+- **Computer Vision & Referring Segmentation**: Image/video referring segmentation, boundary consistency, and dense prediction algorithms[cite: 6].
+- **Model Efficiency & Compression**: Training-free MLLM pruning and query-adaptive compute routing[cite: 6].
 
-## 📰 News
-* **[2026.05]** 🚀 Code and pre-trained models for SALMA are released!
-* **[2026.05]** 📝 The manuscript is currently under review.
+---
 
-## 💡 Methodology
+## 🚀 Featured Research Projects
 
-*(请在这里插入一张高质量的模型架构矢量图，如 `docs/architecture.png`)*
+### [SALMA: Structure-Aware Alignment Framework for Referring Image and Video Segmentation](Link-to-your-repo)
+*Status: Under Review (CCF-A) | First Author*[cite: 6]
+- **Core Contribution**: Proposed **Mask-Biased Attention** and **Text-Mask Contrastive (TMC) Loss** to inject class-agnostic structural priors into cross-modal alignment, solving attention drift issues in MLLMs[cite: 6].
+- **Performance**: Achieved **+3.4 J&F** on Ref-DAVIS17 and **+4.3** on MeVis compared to strong Sa2VA-1B baseline, with only ~0.7% inference latency overhead (17.84 FPS)[cite: 6].
+- **Engineering**: Implemented end-to-end training pipeline using PyTorch, LoRA, and DeepSpeed ZeRO-2 with BF16 mixed precision on a 4×RTX 5090 cluster[cite: 6].
 
-SALMA tackles the attention drift problem caused by salient distractors in complex spatial relationships. The core contributions include:
-* **Mask-Biased Attention (MBA):** Extracts class-agnostic structural priors using SAM-2 decoder's stop-gradient null-prompt pre-pass, injecting them via soft residual gating.
-* **Text-Mask Contrastive Loss:** Enhances consistency between text semantics and target masks by aggregating visual representations on post-MBA feature maps.
-* **Boundary Consistency Loss:** Refines fine-grained edge quality based on Sobel edge maps.
+### [QACR: Query-Adaptive Visual Token Compression for MLLMs](Link-to-your-repo)
+*Status: Manuscript in Preparation | First Author*[cite: 6]
+- **Core Contribution**: A **training-free** query-adaptive token scoring mechanism combining attention saliency and query relevance, effectively compressing visual tokens without new checkpoints[cite: 6].
+- **Performance**: Retained 97.75% of full-compute performance ($Avg.=0.7914$) at only 30% visual compute budget on Qwen3.5-VL-4B, outperforming VisionZip by **+14.74%**[cite: 6].
+- **Engineering**: Designed depth-aware latter-layer pruning and established a matched-compute evaluation protocol across multiple benchmarks[cite: 6].
 
-## 📊 Main Results
+---
 
-SALMA achieves state-of-the-art performance across multiple benchmarks compared to the strong Sa2VA-1B baseline.
+## 🛠️ Technical Skills & Infrastructure
 
-| Benchmark | Metric | Sa2VA-1B | SALMA | $\Delta$ |
-| :--- | :---: | :---: | :---: | :---: |
-| **Ref-DAVIS17** | J&F | 68.47* | **71.87** | **+3.4** |
-| **Ref-YouTube-VOS** | J&F | - | - | **+1.7** |
-| **MeVis** | J&F | - | - | **+4.3** |
-| **RefCOCOg (test)** | cIoU | - | **78.4** | - |
+- **Languages**: Python, C/C++, SQL, Shell[cite: 6].
+- **Frameworks & Tools**: PyTorch, Hugging Face Transformers, PEFT/LoRA, DeepSpeed ZeRO, vLLM[cite: 6].
+- **Infrastructure**: Experienced in environment deployment, GPU memory optimization, and experimental scheduling for multi-GPU high-end server clusters (**4× RTX 5090**)[cite: 6].
 
-> *Note: End-to-end inference speed shifts minimally from 17.97 FPS to 17.84 FPS (only ~0.7% latency overhead).*
+---
 
-## 🚀 Quick Start
+## 🏆 Honors & Awards
+- **2nd Prize**, National AI Application Scenario Innovation Challenge (2025.11)[cite: 6].
+- **Silver Award**, 18th "Challenge Cup" Extracurricular Academic and Technological Work Competition, Zhejiang Province (2023.06)[cite: 6].
 
-### 1. Environment Setup
-Tested on Ubuntu 20.04, Python 3.9, PyTorch 2.1.2, and DeepSpeed ZeRO-2.
-```bash
-conda create -n salma python=3.9 -y
-conda activate salma
-pip install -r requirements.txt
+<!--
+**pengrui-art/pengrui-art** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+-->
