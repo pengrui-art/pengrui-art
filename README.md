@@ -2,7 +2,7 @@
 
 🎓 **Joint-Training Master's Student** at **NERCITA** (National Engineering Research Center for Information Technology in Agriculture) & **Zhejiang A&F University**.
 
-📧 **Email**: pengrui130@gmail.com | 🌐 **Google Scholar**: [Your Link Here] | 📄 **CV**: [Your CV Link Here]
+📧 **Email**: pengrui130@gmail.com |  📄 **CV**:https://drive.google.com/file/d/1yKBUXycMAl-Tc2pTSAd8Q-74h-keMZVN/view?usp=drive_link
 
 ---
 
